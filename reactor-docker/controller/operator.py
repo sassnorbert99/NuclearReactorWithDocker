@@ -100,6 +100,5 @@ class Server:
 
 
     def run_web_app(self, port=1986):
-        app.run(port=port)
+        app.run(host="0.0.0.0", port=port)
         print("server is running on port" + port)
-
